@@ -39,18 +39,6 @@
   transition: all 0.2s ease-in-out;
 }
 
-.time-select {
-  background: lightblue;
-}
-
-.sound-picker {
-  background: lightgreen;
-}
-
-.player-container {
-  background: lightcoral;
-}
-
 .time-display {
   position: absolute;
   bottom: 10%;
@@ -89,7 +77,7 @@ video {
   height: 120px;
   width: 120px;
   border-radius: 50%;
-  padding: 30px;
+  padding: 0;
 }
 
 .sound-picker button:nth-child(1) {
@@ -100,6 +88,6 @@ video {
   background: #a14f49;
 }
 
-.sound-picker button img{
-  height: 100%;
+.sound-picker button img {
+  height: 60%;
 }
