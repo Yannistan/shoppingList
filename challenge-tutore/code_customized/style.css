@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(img/zen.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.title {
+  font-family: "Libre Baskerville", serif;
+}
+
+nav a {
+  text-shadow: 2px 2px rgb(192, 192, 218);
+}
+
+.app {
+  height: 100vh;
+  text-shadow: 2px 2px black;
+}
+
+.sound-picker {
+  display: flex;
+  justify-content: space-around;
+}
+
+.time-select button,
+.sound-picker button {
+  color: white;
+  width: 30%;
+  height: 10%;
+  background: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: all 0.5s ease;
+}
+
+.sound-picker button {
+  border: none;
+  height: 120px;
+  width: 120px;
+  padding: 30px;
+  border-radius: 50%;
+}
+.sound-picker button:nth-child(2) {
+  background: #4972a1;
+}
+.sound-picker button:nth-child(1) {
+  background: #a14f49;
+}
+.sound-picker button img {
+  height: 100%;
+}
+
+.time-select button:hover {
+  background: white;
+  color: black;
+}
+
+.player-container {
+  position: relative;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.player-container svg {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  pointer-events: none;
+}
+.player-container svg circle {
+  transition: all 0.2s ease-in-out;
+}
+.time-display {
+  color: white;
+  position: absolute;
+  font-size: 50px;
+  bottom: 10%;
+}
+
+[id="mode"] {
+  color: white;
+  position: absolute;
+  font-size: 50px;
+  top: 10%;
+}
+
+[id="relaxingfront"] {
+  background-image: url(img/plages.jpg);
+  background-position-y: 100px;
+}
+
+[id="relaxingback"] {
+  background-image: url(img/pluie.jpg);
+}
+
+.avatar{
+  border-radius: 50%; 
+  max-width: 4.4rem;
+  margin: auto;
+  margin-bottom: 10px;
+
+}
+
+a{
+  text-decoration: none;
+}
+
